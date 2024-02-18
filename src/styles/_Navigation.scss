@@ -1,0 +1,41 @@
+nav{
+    padding-right: 50px;
+    margin-top: 50px;
+    width: 150px ;
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    li{
+        .active{
+            border-bottom: 2px solid white;
+            padding: 2px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+
+h1{
+    margin-top: 50px;
+    width: 400px;
+    color: aliceblue;
+    padding-left: 3rem;
+}
+
+.Header-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 39, 39);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
