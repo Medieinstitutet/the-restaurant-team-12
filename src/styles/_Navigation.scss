@@ -1,0 +1,51 @@
+nav{
+    padding: 30px;
+    width: 150px ;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    li{
+        border-left: 1px solid whitesmoke;
+        padding: 10px;
+        .active{
+            border-bottom: 2px solid white;
+            padding: 2px;
+            cursor: pointer;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+}
+
+ 
+h1{
+    margin-top: 50px;
+    width: 400px;
+    color: aliceblue;
+    padding-left: 3rem;
+}
+
+.Header-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+}
+
+img {
+    width: 100px;
+    align-items: center;
+}

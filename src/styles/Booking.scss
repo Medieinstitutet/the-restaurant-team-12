@@ -1,0 +1,385 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+
+.bodyn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.picdiv {
+  width: 100%;
+
+  height: 100%;
+  .bild {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.leftside {
+  display: block;
+  width: 100%;
+
+  height: 100%;
+}
+.header {
+  background-color: rgb(16, 16, 16);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  height: 110px;
+  padding-top: 22px;
+  padding-left: 60px;
+}
+.header-h4 {
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.input-number {
+  height: 25px;
+  width: 200px;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fffefe;
+  text-align: center;
+  color: black;
+}
+.input-text {
+  background-color: #fffefe;
+  color: black;
+  text-align: center;
+  width: 175px;
+  height: 25px;
+  display: block;
+  margin: 40px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.extra-form-div {
+  padding: 30px;
+  font-size: 20px;
+}
+.info-booking-text{
+  font-size: 20px;
+}
+
+.input-calendar {
+  background-color: #696767;
+  color: whitesmoke;
+  cursor: pointer;
+  height: 25px;
+  font-size: 18px;
+}
+.input-calendar::-webkit-calendar-picker-indicator {
+  top: 3px;
+  right: 0;
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  font-weight: 500;
+}
+.timesavailable {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40%;
+}
+.timesbtn {
+  height: 60px;
+  width: 150px;
+  color: black;
+  background-color: rgb(16, 16, 16);
+  font-size: 21px;
+}
+.form-div {
+  border: 2px solid black;
+  padding: 0px 20px 20px 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px 5px #000000;
+  margin-bottom: 50px;
+}
+.input-text{
+  font-size: 15px;
+  width: 70%;
+}
+.timestext {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.next-button {
+  height: 50px;
+  width: 150px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+.next-button:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  color: black;
+}
+.calendar-div {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.yeye {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: rgb(255, 255, 255);
+  border: 1px solid #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  box-shadow: 0 0 10px 5px #000000;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+  color: black;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  color: black;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #fcfcfc;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #eeeaea;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth,
+.react-calendar__decade-view__years__year--neighboringDecade,
+.react-calendar__century-view__decades__decade--neighboringCentury {
+  color: #757575;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font: inherit;
+  font-size: 0.833em;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #faf8f8;
+  color: #ababab;
+  cursor: default;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth:disabled,
+.react-calendar__decade-view__years__year--neighboringDecade:disabled,
+.react-calendar__century-view__decades__decade--neighboringCentury:disabled {
+  color: #cdcdcd;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #adaaaa;
+}
+
+.react-calendar__tile--active {
+  background: #b3b4b4;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #8d8d8d;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+.time-btn {
+  cursor: pointer;
+  height: 55px;
+  width: 120px;
+
+  color: white;
+  font-size: 20px;
+  border: solid 1px #fff;
+  border-radius: 8px;
+}
+.time-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.times-div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding: 50px;
+}
+
+.customer-details {
+  text-align: center;
+}
+.end-message {
+  padding-top: 200px;
+  font-size: 24px;
+}
+.gdpr-text {
+  font-size: 15px;
+  line-height: 0px;
+}
+@media only screen and (max-width: 720px) {
+  .bodyn {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.extra-form-div {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.info-booking-text {
+  font-size: 20px;
+}
+
+.customer-details {
+  text-align: center;
+}
+
+.end-message {
+  padding-top: 200px;
+  font-size: 24px;
+}
+}
+
+
+
